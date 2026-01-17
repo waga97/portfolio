@@ -1286,8 +1286,15 @@ footer a {
     }
 
     .section-header {
-        font-size: 2rem;
+        font-size: clamp(1.2rem, 5vw, 2rem);
         padding: 15px 20px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .section-number {
+        padding: 8px 15px;
+        font-size: 1rem;
     }
 
     .name {
@@ -1324,9 +1331,21 @@ footer a {
         max-width: 280px;
     }
 
+    .marquee-container {
+        overflow: hidden;
+    }
+
+    .marquee {
+        max-width: none;
+        width: max-content;
+    }
+
     .marquee span {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 0 30px;
+        max-width: none;
+        display: inline-block;
+        min-width: max-content;
     }
 
     .contact::before {

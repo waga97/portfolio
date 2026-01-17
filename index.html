@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA — DEV</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.169/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- MARQUEE BANNER -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span>&#9733; Senior Developer &#9733; 7+ Years Experience &#9733; Vue.js Expert &#9733; AWS Cloud &#9733;
+                React Native &#9733; Based in Malaysia &#9733;</span>
+            <span>&#9733; Senior Developer &#9733; 7+ Years Experience &#9733; Vue.js Expert &#9733; AWS Cloud &#9733;
+                React Native &#9733; Based in Malaysia &#9733;</span>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="name-container">
+                <div class="hello">Hello, I'm</div>
+                <h1 class="name glitch">
+                    <span>ARSHAD</span>
+                    <span>AHMAD</span>
+                </h1>
+                <div class="title-box">
+                    <h2>Software Engineer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="photo-container">
+                <div class="photo-frame">
+                    <canvas id="avatar-canvas" class="avatar-canvas"></canvas>
+                    <div id="avatar-fallback" class="avatar-fallback" style="display: none;">AA</div>
+                </div>
+                <div class="floating-badge badge-1">7+ Years EXP</div>
+                <div class="floating-badge badge-2">Frontend Brutalist</div>
+                <div class="floating-badge badge-3">Open for Collaboration</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Technologies</div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="section-header">
+        <span class="section-number">01</span>
+        About Me
+    </div>
+    <section class="about">
+        <div class="about-content">
+            <p class="about-text">
+                I'm a <span class="highlight">senior developer</span> with 7+ years of experience delivering scalable,
+                production-grade web and mobile applications.
+                <br><br>
+                I specialize in <span class="highlight">frontend architecture</span> using Vue.js and TypeScript,
+                building responsive SPAs that users actually love. I've developed cross-platform mobile apps with React
+                Native supporting Android, iOS, and Web from a single codebase.
+                <br><br>
+                Strong advocate of automated testing with Playwright, and recognized for <span
+                    class="highlight mentor-hover" data-hover="your code sucks, you should be ashamed 😈">mentoring
+                    junior developers</span> and driving frontend best practices through code
+                reviews and technical guidance.
+            </p>
+        </div>
+        <div class="about-sidebar">
+            <div class="info-block">
+                <div class="info-label">Location</div>
+                <div class="info-value">
+                    <div class="location-creative">
+                        <span class="location-pin" style="font-size: 1.4em;">&#128205;</span>
+                        <span>Kuala Lumpur, Malaysia</span>
+                    </div>
+                    <div class="coordinates">3.1390&#176; N, 101.6869&#176; E</div>
+                </div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Email</div>
+                <div class="info-value">arshad.ahmad97.aa@gmail.com</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Availability</div>
+                <div class="info-value">FT / Contract / Freelance</div>
+            </div>
+            <div class="info-block">
+                <div class="info-label">Spoken Languages</div>
+                <div class="info-value">English, Malay</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <div class="section-header">
+        <span class="section-number">02</span>
+        Skills & Tools
+    </div>
+    <section class="skills">
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-category">Languages</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Frontend & Mobile</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Svelte</span>
+                    <span class="skill-tag">jQuery</span>
+                    <span class="skill-tag">Three.js</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Backend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">NestJS</span>
+                    <span class="skill-tag">Laravel</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Cloud & AWS</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Lambda</span>
+                    <span class="skill-tag">SQS</span>
+                    <span class="skill-tag">Cognito</span>
+                    <span class="skill-tag">ECS</span>
+                    <span class="skill-tag">ECR</span>
+                    <span class="skill-tag">Fargate</span>
+                    <span class="skill-tag">Bedrock</span>
+                    <span class="skill-tag">RDS</span>
+                    <span class="skill-tag">SES/SNS</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Databases</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">DynamoDB</span>
+                    <span class="skill-tag">SQLite</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Testing & Quality</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Playwright</span>
+                    <span class="skill-tag">Vitest</span>
+                    <span class="skill-tag">Storybook</span>
+                    <span class="skill-tag">ESLint</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">DevOps & Others</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">SLS</span>
+                    <span class="skill-tag">AWS CDK</span>
+                    <span class="skill-tag">Fastlane</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">Jasper</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Integration Experience</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Apple</span>
+                    <span class="skill-tag">Line</span>
+                    <span class="skill-tag">Facebook</span>
+                    <span class="skill-tag">Tiktok</span>
+                    <span class="skill-tag">Shopee</span>
+                    <span class="skill-tag">Google</span>
+                    <span class="skill-tag">Billplz</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <div class="section-header">
+        <span class="section-number">03</span>
+        Experience
+    </div>
+    <section class="experience">
+        <div class="exp-card">
+            <span class="exp-year">Apr 2022 — Present</span>
+            <h3 class="exp-role">Senior Developer</h3>
+            <div class="exp-company">@ eCloudvalley Technology</div>
+            <p class="exp-desc">Leading frontend architecture and delivering production-grade SPAs using Vue.js,
+                TypeScript, and Tailwind CSS.</p>
+            <ul class="exp-highlights">
+                <li>Built cross-platform mobile apps with React Native</li>
+                <li>Designed serverless backends with AWS Lambda</li>
+                <li>Implemented E2E testing with Playwright</li>
+                <li>Mentoring junior developers</li>
+            </ul>
+        </div>
+        <div class="exp-card">
+            <span class="exp-year">Jun 2019 — Mar 2022</span>
+            <h3 class="exp-role">Full Stack Developer</h3>
+            <div class="exp-company">@ Kollect System</div>
+            <p class="exp-desc">Designed and maintained backend systems using Laravel with clean architecture and
+                scalable APIs.</p>
+            <ul class="exp-highlights">
+                <li>Built high-performance apps with Svelte</li>
+                <li>Integrated payment gateways (eGHL, Billplz)</li>
+                <li>Optimized PostgreSQL schemas</li>
+                <li>Developed fintech & RPA solutions</li>
+            </ul>
+        </div>
+        <div class="exp-card">
+            <span class="exp-year">Feb 2019 — May 2019</span>
+            <h3 class="exp-role">Junior Analyst</h3>
+            <div class="exp-company">@ Kollect System (Intern)</div>
+            <p class="exp-desc">Supported product development through requirements analysis and quality assurance
+                testing.</p>
+            <ul class="exp-highlights">
+                <li>Gathered and analyzed user requirements</li>
+                <li>Executed unit and integration tests</li>
+                <li>Documented bugs and validated fixes</li>
+            </ul>
+        </div>
+        <div class="exp-card">
+            <span class="exp-year">2019 — Present <span class="collab-badge">Open for Collab</span></span>
+            <h3 class="exp-role">Freelance Developer</h3>
+            <div class="exp-company">@ Self-Employed</div>
+            <p class="exp-desc">Delivering tailored web solutions for local businesses and e-commerce clients across
+                various industries.</p>
+            <ul class="exp-highlights">
+                <li>Built e-commerce integrations for retail clients with TikTok Shop & Shopee</li>
+                <li>Designed & developed landing pages for F&B businesses</li>
+                <li>Created appointment booking systems for professional services</li>
+                <li>Designed & developed websites for private events (weddings, meetups, conventions)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <div class="section-header" style="background: var(--yellow); color: var(--black);">
+        <span class="section-number" style="background: var(--black); color: var(--yellow);">04</span>
+        Featured Projects
+    </div>
+    <section class="projects">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">AWS</div>
+                <div class="project-content">
+                    <h3 class="project-title">Serverless Platform</h3>
+                    <p>Scalable serverless architecture with Lambda, API Gateway, and DynamoDB for enterprise clients.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">DynamoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">VUE</div>
+                <div class="project-content">
+                    <h3 class="project-title">Enterprise SPA</h3>
+                    <p>Production-grade Vue.js application with complex state management and real-time features.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Pinia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">RN</div>
+                <div class="project-content">
+                    <h3 class="project-title">Mobile App</h3>
+                    <p>Cross-platform React Native app supporting iOS, Android, and Web with Firebase integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Fastlane</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <div class="section-header">
+        <span class="section-number">05</span>
+        Education
+    </div>
+    <section class="education">
+        <div class="edu-card">
+            <h3 class="edu-degree">B.Sc. Computer Science</h3>
+            <p class="edu-school">Software Engineering (Hons.)</p>
+            <p class="edu-school">Universiti Tenaga Nasional</p>
+            <span class="edu-year">2016 — 2019</span>
+        </div>
+        <div class="edu-card">
+            <h3 class="edu-degree">Foundation</h3>
+            <p class="edu-school">Computer Science</p>
+            <p class="edu-school">Universiti Tenaga Nasional</p>
+            <span class="edu-year">2015 — 2016</span>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2 class="contact-title glitch"><span id="bomb" class="draggable-bomb" style="cursor: grab;">&#128163;</span>
+            Let's Build Together</h2>
+        <div class="contact-location">
+            <span id="earth" class="globe-icon drop-target" style="font-size: 1.4em;">&#127758;</span>
+            <span>Currently coding from <strong>Kuala Lumpur, Malaysia</strong></span>
+        </div>
+        <div class="contact-links">
+            <a href="mailto:arshad.ahmad97.aa@gmail.com" class="contact-btn">&#9993; Email Me</a>
+            <a href="https://github.com/waga97" class="contact-btn" target="_blank">&#128025; GitHub</a>
+        </div>
+    </section>
+
+    <!-- EASTER EGGS SECTION -->
+    <section class="easter-eggs">
+        <h2 class="easter-eggs-title"><span class="crystal-ball-trigger" id="crystal-ball">&#128302;</span> Thanks for
+            Visiting</h2>
+        <p class="easter-eggs-subtitle">6 easter eggs hide in plain sight. Did you find them all?</p>
+
+        <div class="easter-eggs-grid">
+            <div class="egg-card">
+                <span class="egg-emoji">&#127183;</span>
+                <h3>Behind the Mask</h3>
+                <p>Every developer has a shadow self. Mine appears when you linger on my portrait...</p>
+            </div>
+
+            <div class="egg-card">
+                <span class="egg-emoji">&#128520;</span>
+                <h3>The Forbidden Hover</h3>
+                <p>There's a word in my story that reveals my true teaching philosophy. Dare to find it?</p>
+            </div>
+
+            <div class="egg-card">
+                <span class="egg-emoji">&#128163;</span>
+                <h3>Mutual Destruction</h3>
+                <p>Some things are meant to collide. The explosive and the planet share an unspoken bond.</p>
+            </div>
+
+            <div class="egg-card">
+                <span class="egg-emoji">&#128640;</span>
+                <h3>The Ascent</h3>
+                <p>What goes up must transform. The arrow knows the way to the moon.</p>
+            </div>
+
+            <div class="egg-card">
+                <span class="egg-emoji">&#128225;</span>
+                <h3>Whispers in the Static</h3>
+                <p>Dots. Dashes. A hidden message scrolls above, only those who decode it will understand.</p>
+            </div>
+
+            <div class="egg-card">
+                <span class="egg-emoji">&#129497;</span>
+                <h3>Fortune Teller</h3>
+                <p>The mystic above holds wisdom. Click the crystal ball and receive your destiny.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & Built with <span class="footer-emoji">&#9749;</span> and bold CSS by <span
+                class="goat-reveal"><span class="footer-emoji goat">&#128016;</span><span class="author-name"><a
+                        href="#">&nbsp;Arshad Ahmad</a></span></span> — 2026</p>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <div id="scroll-top" class="scroll-indicator">
+        <span id="scroll-icon">&#8593;</span>
+    </div>
+
+    <!-- FORTUNE MODAL -->
+    <div id="fortune-modal" class="fortune-modal">
+        <div class="fortune-content">
+            <span class="fortune-close">&times;</span>
+            <div class="fortune-ball">&#128302;</div>
+            <p id="fortune-text" class="fortune-text"></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/three-scene.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

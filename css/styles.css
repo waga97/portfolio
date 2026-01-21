@@ -510,6 +510,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-top: 40px;
+    perspective: 1000px;
 }
 
 .skill-card {
@@ -517,9 +518,11 @@ body {
     border: var(--border-thick);
     box-shadow: var(--shadow);
     padding: 30px;
-    transition: all 0.15s ease;
+    transition: box-shadow 0.15s ease;
     position: relative;
     overflow: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
 
 .skill-card::before {
@@ -565,7 +568,6 @@ body {
 }
 
 .skill-card:hover {
-    transform: translate(-4px, -4px);
     box-shadow: 12px 12px 0 var(--black);
 }
 
@@ -1477,3 +1479,4 @@ footer a {
         opacity: 0;
     }
 }
+
